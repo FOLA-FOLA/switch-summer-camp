@@ -160,6 +160,18 @@ ul {
     color: var(--primary-yellow);
     font-size: 0.875rem;
 }
+.btn-large {
+    padding: 16px 32px;
+    font-size: 1.125rem;
+    white-space: nowrap; /* Forces text to stay on one line */
+}
+
+.urgency-text {
+    font-weight: 700;
+    color: var(--primary-yellow);
+    font-size: 0.875rem;
+    white-space: nowrap; /* Forces text to stay on one line */
+}
 
 .hero-image-wrapper {
     position: relative;
@@ -341,5 +353,13 @@ ul {
         flex-direction: column;
         text-align: center;
         gap: 32px;
+    }
+}
+@media (max-width: 768px) {
+    .hero-ctas {
+        display: flex;
+        flex-direction: column; 
+        gap: 16px; 
+        align-items: center; 
     }
 }
